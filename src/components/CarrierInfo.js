@@ -5,14 +5,15 @@ import { css } from 'emotion/macro';
 import { spacing, standardBox } from '../Styles';
 
 const carrierInfo = css`
-  ${standardBox}
+  ${standardBox};
+  color: #515A5A;
   text-align: left;
   padding-bottom: 0;
 `
 
 const carrierInfoName = css`
   font-size: 46px;
-  font-weight: 3100;
+  font-weight: 300;
   color: #003D40;
 `
 
@@ -22,7 +23,8 @@ const infoSummary = css`
 
 const infoSummaryTitle = css`
   margin-block-start: 1.33em;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 500;
 `
 
 const infoSummaryDescription = css`
@@ -30,11 +32,12 @@ const infoSummaryDescription = css`
 `
 
 const infoSummaryDescriptionHeader = css`
-  font-weight: 500;
-  margin-bottom: calc(${spacing}*2)
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 0
 `
 const infoSummaryDescriptionBody = css`
-  font-size: 13px;
+  font-size: 14px;
 `
 
 export default function CarrierInfo({ carrier }) {

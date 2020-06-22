@@ -11,7 +11,7 @@ import Toggles from './components/Toggles';
 import SnapshotDetails from './components/SnapshotDetails';
 
 const appStyle = css`
-color: #636B6B;
+  color: #636B6B;
   font-size: 14px;
 `
 
@@ -29,8 +29,9 @@ const grayBox = css`
 `
 
 const snapshotColumnTitle = css`
-  font-size: 34px;
-  font-weight: 100;
+  color:#4A4A4A;
+  font-size: 40px;
+  font-weight: 300;
 `
 
 const snapshotColumnTitleHiddenAboveMobile = css`

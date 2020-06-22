@@ -24,9 +24,9 @@ const toggle = css`
   border: 1px solid #979797;
   padding: calc(${spacing}*3) calc(${spacing}*5);
   margin-right: calc(${spacing}*2);
-  border-radius: calc(${spacing}*2);
+  border-radius: 6px;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 500;
   white-space: nowrap;
 `
 const toggleActive = css`

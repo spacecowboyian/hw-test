@@ -6,8 +6,9 @@ import { Doughnut } from 'react-chartjs-2';
 import { spacing, colorSeries } from '../Styles';
 
 const snapshotTitle = css`
-  font-size: 30px;
-  font-weight: 100;
+  color: #4A4A4A;
+  font-size: 32px;
+  font-weight: 300;
 `
 
 const keyList = css`
@@ -55,22 +56,26 @@ const chartContainer = css`
 `
 
 const chartPercentage = css`
- position: absolute;
+  color: #515A5A;
+  position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  font-size:40px;
-  font-weight: 100;
+  font-size:48px;
+  font-weight: 300;
 `
 
 const chartTotal = css`
+  color: #515A5A;
+  letter-spacing: .04em;
+  font-family: 'Montserrat', sans-serif;
   font-size: 24px;
   font-weight: 600;
   margin-top: calc(${spacing}*8);
 `
 
 const chartTotalLabel = css`
-  font-weight: 600;
+  font-weight: 500;
   margin-top: calc(${spacing}*2);
 `
 

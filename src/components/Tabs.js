@@ -18,7 +18,7 @@ const tab = css`
   padding: calc(${spacing}*8) 0;
   margin-right: calc(${spacing}*10);
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
   color: #003D40;
   border-bottom: ${spacing} solid transparent;
