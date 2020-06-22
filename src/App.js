@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Row, Col, Grid } from 'react-flexbox-grid';
 import { css } from 'emotion/macro';
+import { useQuery } from '@apollo/react-hooks';
+import { gql } from 'apollo-boost';
 
 import './App.css';
 import { spacing, standardBox, colorSeries, hiddenAboveMobile } from './Styles';
@@ -61,13 +63,31 @@ const userData = {
   name: 'Elwin Sharvill',
 }
 
-const carrierData = {
-  carrierName: "Travelers",
-  carrierWebsite: "www.travelers.com",
-  carrierWebsiteInfo: "Travelers is the second largest writer of U.S. commercial property casualty insurance and the third largest writer of U.S. personal insurance through independent agents."
+const BROKER_NAME = gql`
+{
+  mostRecentSnapshot {
+    carrier {
+      name
+    }
+  }
 }
+`;
 
 function App() {
+
+  const { loading, error, data } = useQuery(BROKER_NAME);
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error :(</p>;
+
+  console.log(data)
+
+  const carrierData = {
+    carrierName: data.mostRecentSnapshot.carrier.name,
+    carrierWebsite: "www.travelers.com",
+    carrierWebsiteInfo: "Travelers is the second largest writer of U.S. commercial property casualty insurance and the third largest writer of U.S. personal insurance through independent agents."
+  }
+
   return (
     <div data-testid="appFrame" className={appStyle}>
       <Grid className={appGrid} fluid>
