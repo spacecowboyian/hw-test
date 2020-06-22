@@ -3,7 +3,7 @@ import { Row, Col } from 'react-flexbox-grid';
 import { css } from 'emotion/macro';
 import { FiSliders } from "react-icons/fi";
 
-import { spacing } from '../Styles';
+import { spacing } from '../../Styles';
 
 //TODO: snapshots prop should accept snapshots array
 

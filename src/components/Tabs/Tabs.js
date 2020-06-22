@@ -2,7 +2,7 @@ import React from 'react'
 import { Row, Col } from 'react-flexbox-grid';
 import { css } from 'emotion/macro';
 
-import { spacing } from '../Styles';
+import { spacing } from '../../Styles';
 
 const tabContainer = css`
   padding: 0 calc(${spacing}*8);

@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="css-gr20k3-standardBox-carrierInfo row"
+>
+  <div
+    className="col-md-12 col-lg-6"
+  >
+    <h1
+      className="css-4fjyaz-carrierInfoName"
+    >
+      Test Carrier
+    </h1>
+    <dl
+      className="css-ie6ail-infoSummary"
+    >
+      <dt
+        className="css-172yo6n-infoSummaryTitle"
+      >
+        Website Summary
+      </dt>
+      <dd
+        className="css-1vhsb9-infoSummaryDescription"
+      >
+        <h4
+          className="css-1669r31-infoSummaryDescriptionHeader"
+        >
+          www.testcarrier.com
+        </h4>
+        <p
+          className="css-ckr3ut-infoSummaryDescriptionBody"
+        >
+          Boy oh boy is there ever info
+        </p>
+      </dd>
+    </dl>
+  </div>
+</div>
+`;

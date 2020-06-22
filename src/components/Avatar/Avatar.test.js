@@ -3,13 +3,13 @@ import { cleanup } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import renderer from 'react-test-renderer';
 
-import App from './App';
+import Avatar from './Avatar';
 
 afterEach(cleanup);
 
 it('renders correctly', () => {
   const tree = renderer
-    .create(<App />)
+    .create(<Avatar initials="IJ" />)
     .toJSON();
   expect(tree).toMatchSnapshot();
 })

@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+Array [
+  <h3
+    className="css-svz9iy-snapshotTitle"
+  >
+    Premium Range
+  </h3>,
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-6"
+    >
+      <dl
+        className="css-1024hqm-keyList"
+      >
+        <div
+          className="css-qw6ik-keyItem"
+        >
+          <dt
+            className="css-1uar067-keyDotBase"
+          >
+            <span
+              className="css-18wopn0-keyDotContent"
+            >
+              Range 1
+            </span>
+          </dt>
+          <dd
+            className="css-73s3vi-keyDescription"
+          >
+            $0 - $5000
+          </dd>
+        </div>
+        <div
+          className="css-qw6ik-keyItem"
+        >
+          <dt
+            className="css-1mmkf41-keyDotBase"
+          >
+            <span
+              className="css-18wopn0-keyDotContent"
+            >
+              Range 2
+            </span>
+          </dt>
+          <dd
+            className="css-73s3vi-keyDescription"
+          >
+            $5000 - $10,000
+          </dd>
+        </div>
+      </dl>
+    </div>
+    <div
+      className="col-xs-6 css-1nk341g-chartColumn"
+    >
+      <div
+        className="css-1symqm2-chartContainer"
+      >
+        <div
+          className="css-uy1i6m-chartPercentage"
+        >
+          95%
+        </div>
+      </div>
+      <div
+        className="css-16mqj27-chartTotal"
+      >
+        $1,548,990
+      </div>
+      <div
+        className="css-1xay42j-chartTotalLabel"
+      >
+        Total Premiums
+      </div>
+    </div>
+  </div>,
+]
+`;

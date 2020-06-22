@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="css-pxyi0o-tabContainer row"
+>
+  <div
+    className="col-xs-12"
+  >
+    <ul
+      className="css-1yca8z4-tabs"
+    >
+      <li
+        className="css-mzdxzq-tab-tabActive"
+      >
+        snapshot
+      </li>
+      <li
+        className="css-1qlp9uz-tab"
+      >
+        trends
+      </li>
+    </ul>
+  </div>
+</div>
+`;

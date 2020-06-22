@@ -3,7 +3,7 @@ import { Row, Col } from 'react-flexbox-grid';
 import { css } from 'emotion/macro';
 import { Doughnut } from 'react-chartjs-2';
 
-import { spacing, colorSeries } from '../Styles';
+import { spacing, colorSeries } from '../../Styles';
 
 const snapshotTitle = css`
   color: #4A4A4A;

@@ -4,11 +4,11 @@ import { css } from 'emotion/macro';
 
 import './App.css';
 import { spacing, standardBox, colorSeries, hiddenAboveMobile } from './Styles';
-import Header from './components/Header';
-import CarrierInfo from './components/CarrierInfo';
-import Tabs from './components/Tabs';
-import Toggles from './components/Toggles';
-import SnapshotDetails from './components/SnapshotDetails';
+import Header from './components/Header/Header';
+import CarrierInfo from './components/CarrierInfo/CarrierInfo';
+import Tabs from './components/Tabs/Tabs';
+import Toggles from './components/Toggles/Toggles';
+import SnapshotDetails from './components/SnapshotDetails/SnapshotDetails';
 
 const appStyle = css`
   color: #636B6B;
@@ -69,7 +69,7 @@ const carrierData = {
 
 function App() {
   return (
-    <div className={appStyle}>
+    <div data-testid="appFrame" className={appStyle}>
       <Grid className={appGrid} fluid>
         <Header user={userData} />
         <CarrierInfo carrier={carrierData} />

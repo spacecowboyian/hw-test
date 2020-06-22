@@ -1,7 +1,7 @@
 import React from 'react';
 import { css } from 'emotion/macro';
 
-import { colorCyan, spacing } from '../Styles';
+import { colorCyan, spacing } from '../../Styles';
 
 const avatarCircle = css`
   display:flex;
@@ -22,7 +22,7 @@ const avatarInitials = css`
   margin-left:-2px;
 `;
 
-export default function Avatar(initials) {
+export default function Avatar({ initials }) {
   return (
     <div className={avatarCircle}><div className={avatarInitials}>{initials}</div></div>
   )

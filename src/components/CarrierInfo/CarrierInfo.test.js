@@ -3,13 +3,17 @@ import { cleanup } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import renderer from 'react-test-renderer';
 
-import App from './App';
+import CarrierInfo from './CarrierInfo';
 
 afterEach(cleanup);
 
 it('renders correctly', () => {
   const tree = renderer
-    .create(<App />)
+    .create(<CarrierInfo carrier={{
+      carrierName: 'Test Carrier',
+      carrierWebsite: 'www.testcarrier.com',
+      carrierWebsiteInfo: 'Boy oh boy is there ever info'
+    }} />)
     .toJSON();
   expect(tree).toMatchSnapshot();
 })

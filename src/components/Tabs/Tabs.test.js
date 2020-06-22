@@ -3,13 +3,14 @@ import { cleanup } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import renderer from 'react-test-renderer';
 
-import App from './App';
+import Tabs from './Tabs';
 
 afterEach(cleanup);
 
+
 it('renders correctly', () => {
   const tree = renderer
-    .create(<App />)
+    .create(<Tabs />)
     .toJSON();
   expect(tree).toMatchSnapshot();
-})
+});

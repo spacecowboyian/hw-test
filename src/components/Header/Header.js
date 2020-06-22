@@ -3,8 +3,8 @@ import { Row, Col } from 'react-flexbox-grid';
 import { css } from 'emotion/macro';
 import { FiBell, FiArrowLeft } from "react-icons/fi";
 
-import { colorCyan, spacing, standardBox } from '../Styles';
-import Avatar from './Avatar';
+import { colorCyan, spacing, standardBox } from '../../Styles';
+import Avatar from '../Avatar/Avatar';
 
 const header = css`
  ${standardBox}
@@ -51,7 +51,7 @@ export default function Header({ user }) {
       <Col className={headerBackButton} xs={1}><FiArrowLeft className={iconLeftArrow} /></Col>
       <Col xs={11} className={headerEmployeeInfo}>
         <div className={headerEmployeeInfoName}>{name}</div>
-        {Avatar(initials)}
+        <Avatar initials={initials} />
         <FiBell className={iconNotificationBell} />
       </Col>
     </Row>
