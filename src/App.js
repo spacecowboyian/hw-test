@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Row, Col, Grid } from 'react-flexbox-grid';
 import { css } from 'emotion/macro';
 import { useQuery } from '@apollo/react-hooks';
